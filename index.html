@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ PDF Generator ✨</h1>
+        <form method="POST">
+            <label>File Name:</label>
+            <input type="text" name="filename" placeholder="Enter file name...">
+
+            <label>Content:</label>
+            <textarea name="content" placeholder="Type your content here..."></textarea>
+
+            <button type="submit">Generate PDF</button>
+        </form>
+    </div>
+</body>
+</html>
